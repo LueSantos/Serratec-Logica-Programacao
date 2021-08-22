@@ -1,0 +1,19 @@
+/*Alice foi até uma loja de eletrônicos e comprou alguns jogos e um videogame novo, pagando R$ 345,00 por todos os jogos e  
+R$ 1.545,00 pelo videogame. Para o pagamento, o sistema irá apresentar 3 opções de parcelamento e o valor de cada parcela: 3 vezes sem juros, 5 vezes sem juros e em 10 vezes com 1,5% de juros sobre o total da compra.*/
+
+const jogos = 345.00;
+const videogame = 1545.00;
+const totalCompra = jogos + videogame;
+const juros = 1.5;
+
+var parc_3xSemJuros = totalCompra / 3;
+var parc_5xSemJuros = totalCompra / 5;
+var parc_10xComJuros = (((totalCompra * (juros / 10)) + totalCompra) / 10);
+
+
+// console.log(`Total: R$${jogos + videogame} | Valor da parcela: R$${parcela3xSemJuros} | (3x sem juros)`);
+// console.log(`Total: R$${jogos + videogame} | Valor da parcela: R$${parcela5xSemJuros} | (5x sem juros)`);
+// console.log(`Total dos Juros: R$${parcela10xComJuros * 10} | Valor da parcela: R$${parcela10xComJuros} | (10x com juros de ${juros}%)`);
+
+console.log('Opções de pagamentos: ','\n',' à vista: R$',totalCompra,'\n','Parcelado em 3x: R$',parc_3xSemJuros,'\n', 'Parcelado em 5x: R$ ',parc_5xSemJuros,'\n', 'Parcelado em 10x: R$ ',parc_10xComJuros,'com juros de 1,5%.' );
+
